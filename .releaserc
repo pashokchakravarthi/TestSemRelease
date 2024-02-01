@@ -13,6 +13,10 @@
       "name": "release/*",
       "prerelease": false
     },
+    {
+      "name": "hotfix/*",
+      "prerelease": false
+    },
     "+([0-9])?(.{+([0-9]),x}).x"
   ],
   "plugins": [
