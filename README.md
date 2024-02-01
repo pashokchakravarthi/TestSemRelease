@@ -34,10 +34,20 @@ npm install --no-save \
               @semantic-release/gitlab \
               conventional-changelog-conventionalcommits --legacy-peer-deps
 
+branches: [
+		'main',
+		// version number branches will release that version
+		'+([0-9])?(.{+([0-9]),x}).x',
+		{
+			channel: 'alpha',
+			name: 'alpha/*',
+			prerelease: true,
+		},
+
 ----------------------------testing plan----------------------
 
 main 
-
+ 
 
 
 -------------------------bk-------------------------------
